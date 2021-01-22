@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".notification"
+
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorAccent"
+        >
+        <RelativeLayout
+            android:id = "@+id/layer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            >
+            <RelativeLayout
+                android:id = "@+id/linear1"
+                android:orientation ="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:id = "@+id/tones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Conversation tones"
+                    >
+
+                </TextView>
+                <Switch
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content"
+                    ></Switch>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below = "@+id/linear1"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/sounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Play sounds for incoming and outgoing"
+                ></TextView>
+            <TextView
+                android:layout_below = "@+id/sounds"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "messages."
+                ></TextView>
+
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:layout_below = "@+id/layer1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/views"
+            android:id = "@+id/view"
+            />
+        <TextView
+            android:layout_below = "@+id/view"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="14dp"
+            android:textColor="@color/texttitle"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:id = "@+id/messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Messages"
+            >
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_below = "@+id/messages"
+            android:id = "@+id/layer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Notification tone"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/silent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Silent"
+                android:layout_below = "@+id/notification"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer2"
+            android:id = "@+id/layer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/vibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Vibrate"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/shorts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Short"
+                android:layout_below = "@+id/vibrate"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer3"
+            android:id = "@+id/layer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Popup notification"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/nopop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "No popup"
+                android:layout_below = "@+id/pop"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer4"
+            android:id = "@+id/layer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Light"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "White"
+                android:layout_below = "@+id/light"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer5"
+            android:id = "@+id/layer6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            >
+            <RelativeLayout
+                android:id = "@+id/linear2"
+                android:orientation ="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:id = "@+id/use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Use high priority notifications"
+                    >
+
+                </TextView>
+                <Switch
+                    android:id="@+id/switchButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content"
+                    ></Switch>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below = "@+id/linear2"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Show previews of notifications at the"
+                ></TextView>
+            <TextView
+                android:layout_below = "@+id/show"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "top of the screen."
+                ></TextView>
+
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:layout_below = "@+id/layer6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/views"
+            android:id = "@+id/view2"
+            />
+        <TextView
+            android:layout_below = "@+id/view2"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="14dp"
+            android:textColor="@color/texttitle"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:id = "@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Group"
+            >
+
+        </TextView>
+        <RelativeLayout
+            android:layout_below = "@+id/group"
+            android:id = "@+id/layer7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/notification2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Notification tone"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/silent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Silent"
+                android:layout_below = "@+id/notification2"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer7"
+            android:id = "@+id/layer8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/vibrate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Vibrate"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/shorts2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Short"
+                android:layout_below = "@+id/vibrate2"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer8"
+            android:id = "@+id/layer9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/pop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Popup notification"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/nopop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "No popup"
+                android:layout_below = "@+id/pop2"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer9"
+            android:id = "@+id/layer10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/light2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Light"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/white2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "White"
+                android:layout_below = "@+id/light2"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer10"
+            android:id = "@+id/layer11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            >
+            <RelativeLayout
+                android:id = "@+id/linear3"
+                android:orientation ="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:id = "@+id/use2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Use high priority notifications"
+                    >
+
+                </TextView>
+                <Switch
+                    android:id="@+id/switchButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    android:theme="@style/SCBSwitch"
+                    android:layout_height="wrap_content"
+                    ></Switch>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below = "@+id/linear3"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/show2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Show previews of notifications at the"
+                ></TextView>
+            <TextView
+                android:layout_below = "@+id/show2"
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:id= "@+id/top2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "top of the screen."
+                ></TextView>
+
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="17dp"
+            android:layout_below = "@+id/layer11"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/views"
+            android:id = "@+id/view3"
+            />
+        <TextView
+            android:layout_below = "@+id/view3"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="14dp"
+            android:textColor="@color/texttitle"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:id = "@+id/calls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Calls"
+            >
+
+        </TextView>
+        <RelativeLayout
+            android:layout_below = "@+id/calls"
+            android:id = "@+id/layer12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/ringtone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Ringtone"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/silent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Silent"
+                android:layout_below = "@+id/ringtone"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below = "@+id/layer12"
+            android:id = "@+id/layer13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            >
+            <TextView
+                android:textColor="@color/textcolor"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:id = "@+id/vibrate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Vibrate"
+                >
+
+            </TextView>
+            <TextView
+                android:textColor="@color/textcolor2"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:id = "@+id/shorts3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Default"
+                android:layout_below = "@+id/vibrate3"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
