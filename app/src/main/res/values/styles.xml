@@ -5,7 +5,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/switchcolor</item>
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
     </style>
 
 
@@ -23,4 +24,15 @@
         <item name="android:colorForeground">#42221f1f
         </item>
     </style>
+
+
+
+
+
+
+
+
+
+
+
 </resources>

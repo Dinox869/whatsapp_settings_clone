@@ -1,3 +1,65 @@
 <resources>
     <string name="app_name">whatsapp</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+
+    //added
+    <string name="account">Account</string>
+    <string name="account_details">Privacy, security, change number</string>
+
+    <string name="chats">Chats</string>
+    <string name="chats_details">Theme, wallpapers, chat history</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="notifications_details">Message, group &amp; call tones</string>
+    <string name="Storage">Storage and data</string>
+    <string name="storage_details">Network usage, auto-download</string>
+    <string name="help">Help</string>
+    <string name="help_details">Help center,contac us, privacy policy</string>
+    <string name="invite">Invite a friend</string>
+    <string name="from">from</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="privacy">Privacy</string>
+    <string name="security">Security</string>
+    <string name="two">Two-step verfication</string>
+    <string name="change">Change number</string>
+    <string name="request">Request account info</string>
+    <string name="delete">Delete my account</string>
+    <string name="conversation">Conversation tones</string>
+    <string name="conversation_details">Play sounds for incoming and outgoing messages</string>
+    <string name="message">Messages</string>
+    <string name="notification">Notification tone</string>
+    <string name="notification_details">Silent</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="vibrate_details">Short</string>
+    <string name="pop">Popup notification</string>
+    <string name="pop_details">No popup</string>
+    <string name="light">Light</string>
+    <string name="light_details">White</string>
+    <string name="use">Use high priority notifications</string>
+    <string name="use_details">Show previews of notifications at the top of the screen</string>
+    <string name="group">Group</string>
+    <string name="calls">Calls</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="ringtone_details">Silent</string>
+    <string name="vibrate_call">Vibrate</string>
+    <string name="vibrate_call_details">Default</string>
+
+
 </resources>
