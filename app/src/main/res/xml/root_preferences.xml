@@ -1,0 +1,68 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- this section ==  photo and barcode ... -->
+        <Preference
+                android:title=" "
+                app:summary=" "
+            />
+
+        <Preference
+            app:key="signature"
+            app:title="@string/account"
+            app:icon="@drawable/ic_baseline_vpn_key_24"
+            app:summary="@string/account_details">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.whatsapp"
+                android:targetClass="com.example.whatsapp.account"
+                />
+        </Preference>
+
+        <Preference
+            app:key="signature"
+            app:title="@string/chats"
+            app:icon="@drawable/ic_baseline_chat_24"
+            app:summary="@string/chats_details"
+            />
+
+
+        <Preference
+        app:key="signature"
+        app:icon="@drawable/ic_baseline_notifications_24"
+        app:title="@string/notifications"
+        app:summary="@string/notifications_details">
+                <intent
+                    android:action="android.intent.action.VIEW"
+                    android:targetPackage="com.example.whatsapp"
+                    android:targetClass="com.example.whatsapp.notification"
+                    />
+        </Preference>
+
+        <Preference
+            app:key="signature"
+            app:icon="@drawable/ic_outline_radio_button_unchecked_24"
+            app:title="@string/Storage"
+            app:summary="@string/storage_details"
+            />
+
+        <Preference
+            app:key="signature"
+            app:icon="@drawable/ic_baseline_help_outline_24"
+            app:title="@string/help"
+            app:summary="@string/help_details"
+            />
+
+        <Preference
+            app:allowDividerBelow="true"
+
+            />
+
+        <Preference
+            app:key="signature"
+            app:icon="@drawable/ic_baseline_people_24"
+            app:title="@string/invite"
+            app:allowDividerBelow="true"
+
+            />
+
+</PreferenceScreen>

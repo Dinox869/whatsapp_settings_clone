@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:key="signature"
+        app:title="@string/privacy"
+        app:icon="@drawable/ic_baseline_lock_24"
+        />
+    <Preference
+        app:key="signature"
+        app:title="@string/security"
+        app:icon="@drawable/ic_baseline_security_24"
+        />
+    <Preference
+        app:key="signature"
+        app:title="@string/two"
+        app:icon="@drawable/ic_baseline_more_24"
+        />
+    <Preference
+        app:key="signature"
+        app:title="@string/change"
+        app:icon="@drawable/ic_baseline_phonelink_ring_24"
+        />
+    <Preference
+        app:key="signature"
+        app:title="@string/request"
+        app:icon="@drawable/ic_baseline_insert_drive_file_24"
+        />
+    <Preference
+        app:key="signature"
+        app:title="@string/delete"
+        app:icon="@drawable/ic_baseline_delete_24"
+        />
+</PreferenceScreen>

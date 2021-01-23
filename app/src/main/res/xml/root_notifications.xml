@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference
+        app:iconSpaceReserved="false"
+        android:title="@string/conversation"
+        android:summary="@string/conversation_details"
+        app:allowDividerBelow="true"
+        />
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        android:title="@string/message">
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/notifications"
+            app:summary="@string/notifications_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/vibrate"
+            app:summary="@string/vibrate_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/pop"
+            app:summary="@string/pop_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/light"
+            app:summary="@string/light_details"/>
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:title="@string/use"
+            app:summary="@string/use_details"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        android:title="@string/group">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/notifications"
+            app:summary="@string/notifications_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/vibrate"
+            app:summary="@string/vibrate_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/pop"
+            app:summary="@string/pop_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/light"
+            app:summary="@string/light_details"/>
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:title="@string/use"
+            app:summary="@string/use_details"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        android:title="@string/calls">
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/ringtone"
+            app:summary="@string/ringtone_details"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            android:title="@string/vibrate_call"
+            app:summary="@string/vibrate_call_details"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
